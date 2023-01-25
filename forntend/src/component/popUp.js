@@ -2,33 +2,32 @@ import React from 'react';
 import '../style/popUp.css';
 
 
-function popUp({ popupRef, handleClickOutside }) {
-
+function popUp({ popupRef, handleClickOutside, handleSubmitBtnClick, popupName }) {
     return (
         <div className='fullScreen'
             onClick={handleClickOutside}
         >
 
-            <div className='pop' ref={popupRef}>
-                <div className='add'>Add</div>
+            <form className='pop' onSubmit={(e) => handleSubmitBtnClick(e, popupName)} ref={popupRef}>
+                <div className='add'>{popupName}</div>
                 <div className="inputLabelBox">
                     <div>Item Name</div>
-                    <input type="text"></input>
+                    <input type="text" required name='itemName'></input>
                 </div>
                 <div className="inputLabelBox">
                     <div>Date of Service</div>
-                    <input type="text"></input>
+                    <input type="date" required name='dateofService'></input>
                 </div>
                 <div className='inputLabelBox'>
                     <div>Owner Name</div>
-                    <input type="text"></input>
+                    <input type="text" required name='ownerName'></input>
                 </div>
                 <div className='inputLabelBox'>
-                    <div>Vendor Name</div>
-                    <input type="text"></input>
+                    <div>Vender Name</div>
+                    <input type="text" required name='venderName'></input>
                 </div>
                 <button id="submit">Submit</button>
-            </div>
+            </form>
         </div>
     );
 }
