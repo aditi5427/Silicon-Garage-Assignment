@@ -1,0 +1,136 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: white;
+}
+
+.mainLogoBox {
+  background-color: #d9e6f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 47px;
+  width: 50px;
+}
+
+.mainLogoBox img {
+  height: 35px;
+}
+
+.contactLogo {
+  margin-right: 10px;
+}
+
+.mainScreen {
+  display: flex;
+}
+
+.sideBar {
+  background-color: white;
+  height: calc(100vh - 47px);
+  width: 50px;
+}
+
+.containt {
+  width: calc(100% - 50px);
+}
+
+.tableTitle {
+  margin: auto;
+  width: 90%;
+}
+
+#title {
+  font-weight: 700;
+  background: white;
+  width: fit-content;
+  padding: 6px;
+  border-radius: 3px;
+  margin-top: 90px;
+}
+
+.table {
+  background-color: white;
+  width: 100%;
+}
+
+#add {
+  border: unset;
+  border-radius: 15px;
+  font-size: 13px;
+  background: rgb(15, 167, 35);
+  padding: 4px 10px;
+  font-weight: 700;
+  margin: 50px 0 30px 20px;
+  color: white;
+}
+
+.list {
+  display: flex;
+  /* justify-content: space-between; */
+  background: rgb(47, 128, 237);
+  color: white;
+  font-weight: 600;
+  padding: 15px;
+}
+
+.ItemNameTitle {
+  width: 25%;
+}
+
+.dateTitle {
+  width: 25%;
+}
+
+.remainingItemsTitle {
+  width: 15%;
+}
+
+/* .btnAreaTitle {
+  width: 25%;
+} */
+
+.listOption {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.ItemName {
+  width: 25%;
+}
+
+.date {
+  width: 25%;
+}
+
+.remainingItems {
+  width: 15%;
+  text-align: center;
+}
+
+.btnArea {
+  width: 40%;
+  text-align: right;
+}
+
+.addRemoveBtn {
+  margin: 0 15px;
+  padding: 2.5px 15px;
+  border: unset;
+  border-radius: 10px;
+  color: white;
+}
+
+.addBtn {
+  background-color: #005AD3;
+}
+
+.removeBtn {
+  background-color: #AF0000;
+}
