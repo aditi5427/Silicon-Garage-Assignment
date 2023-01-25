@@ -61,7 +61,7 @@ function App() {
             console.log(apiResp?.msg);
             setflag(!flag)
         } else if ('Edit') {
-            const apiResp = await apiCall('add_data', 'put', {
+            const apiResp = await apiCall('update_data', 'put', {
                 id: openedDataId,
                 itemName,
                 dateOfService,
