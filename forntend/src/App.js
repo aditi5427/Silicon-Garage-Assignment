@@ -18,7 +18,7 @@ function App() {
     useEffect(function () {
         (async () => {
             const apiResp = await apiCall('get_data')
-            setUserData(apiResp?.data)
+            setUserData(apiResp?.data || [])
         })();
     }, [flag]);
 
